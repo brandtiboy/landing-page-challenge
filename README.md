@@ -1,3 +1,3 @@
-# Challenge for a Grafikr
+# Challenge for Grafikr
 
 Still in development.
