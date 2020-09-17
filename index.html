@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grafikr - Karriere</title>
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+
+    <!-- Primary stylsheet -->
     <link rel="stylesheet" href="scss/styles.css" />
 
     <!-- Fontawesome CDN -->
@@ -21,7 +29,7 @@
         <img class="logo" src="img/grafikr_logo.svg" alt="" />
       </a>
       <img class="circle-image" src="img/grafikr_circle.svg" alt="" />
-      <h1>
+      <h1 class="heading">
         Prisvindende<br />
         E-commerce<br />
         Bureau
@@ -59,7 +67,22 @@
       <!-- Brands section -->
       <div class="brands">
         <h2>Arbejd med de største brands</h2>
-        <img src="img/grafikr_client_soyaconcept.jpg" alt="" />
+
+        <!-- Flickity HTML init -->
+        <div
+          class="gallery js-flickity"
+          data-flickity-options='{ "wrapAround": true }'
+        >
+          <div class="gallery-cell client1">
+            <h3>Then we take the world · Award winning management</h3>
+          </div>
+          <div class="gallery-cell client2">
+            <h3>Soyaconcept · Conversion focused webdesign</h3>
+          </div>
+          <div class="gallery-cell client3">
+            <h3>Läst · Big and bold e-commerce</h3>
+          </div>
+        </div>
       </div>
     </div>
     <div class="wrap-90">
@@ -75,5 +98,8 @@
         </ul>
       </div>
     </div>
+
+    <!-- JavaScript Flickity -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </body>
 </html>

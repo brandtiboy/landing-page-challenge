@@ -4,3 +4,34 @@ $secondary-color: #fff;
 
 // Fonts
 $font-stack: "HK Gothic", sans-serif;
+
+// Flickity
+/* position dots up a bit */
+.flickity-page-dots {
+  bottom: -44px;
+}
+/* dots are lines */
+.flickity-page-dots .dot {
+  height: 4px;
+  width: 22%;
+  margin: 0;
+  border-radius: 0;
+}
+
+/* no circle */
+.flickity-button {
+  background: transparent;
+}
+/* big previous & next buttons */
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+}
+/* icon color */
+.flickity-button-icon {
+  fill: white;
+}
+/* hide disabled button */
+.flickity-button:disabled {
+  display: none;
+}

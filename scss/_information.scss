@@ -1,0 +1,47 @@
+.information {
+  margin: 8% auto;
+  width: 85%;
+
+  .information-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .information-reverse-row {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .information-right-text-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1% 4%;
+    font-size: 2rem;
+    width: 60%;
+  }
+
+  .information-left-text-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1% 4% 0 0;
+    font-size: 2rem;
+    width: 45%;
+  }
+
+  #image-workaway {
+    background-image: url("../img/grafikr_workaway.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 70%;
+    height: 50rem;
+  }
+
+  #image-speaker {
+    background-image: url("../img/grafikr_speaker.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    height: 45rem;
+  }
+}

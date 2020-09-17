@@ -1,0 +1,33 @@
+// Hero section
+
+.heading {
+  text-transform: uppercase;
+  font-size: 10.5rem;
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: 0.5rem;
+  z-index: 10;
+  position: relative;
+  margin-top: 6%;
+}
+
+.logo {
+  width: 4%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.circle-image {
+  width: 22%;
+  position: absolute;
+  animation: spin 45s linear infinite;
+}
+
+.hero-img {
+  max-width: 90vw;
+  position: relative;
+  z-index: 1;
+  margin-top: -12%;
+}

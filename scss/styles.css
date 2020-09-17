@@ -1,3 +1,241 @@
+/* position dots up a bit */
+.flickity-page-dots {
+  bottom: -44px;
+}
+
+/* dots are lines */
+.flickity-page-dots .dot {
+  height: 4px;
+  width: 22%;
+  margin: 0;
+  border-radius: 0;
+}
+
+/* no circle */
+.flickity-button {
+  background: transparent;
+}
+
+/* big previous & next buttons */
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+}
+
+/* icon color */
+.flickity-button-icon {
+  fill: white;
+}
+
+/* hide disabled button */
+.flickity-button:disabled {
+  display: none;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-size: 10.5rem;
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: 0.5rem;
+  z-index: 10;
+  position: relative;
+  margin-top: 6%;
+}
+
+.logo {
+  width: 4%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.circle-image {
+  width: 22%;
+  position: absolute;
+  -webkit-animation: spin 45s linear infinite;
+          animation: spin 45s linear infinite;
+}
+
+.hero-img {
+  max-width: 90vw;
+  position: relative;
+  z-index: 1;
+  margin-top: -12%;
+}
+
+.information {
+  margin: 8% auto;
+  width: 85%;
+}
+
+.information .information-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.information .information-reverse-row {
+  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.information .information-right-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1% 4%;
+  font-size: 2rem;
+  width: 60%;
+}
+
+.information .information-left-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1% 4% 0 0;
+  font-size: 2rem;
+  width: 45%;
+}
+
+.information #image-workaway {
+  background-image: url("../img/grafikr_workaway.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 70%;
+  height: 50rem;
+}
+
+.information #image-speaker {
+  background-image: url("../img/grafikr_speaker.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 90%;
+  height: 45rem;
+}
+
+.team {
+  margin: 6% auto;
+  text-align: center;
+}
+
+.team h3 {
+  margin: 0 auto 4% auto;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  max-width: 60%;
+}
+
+#color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.9;
+}
+
+.bg-image {
+  background-image: url("../img/simone.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50rem;
+  z-index: 0;
+  text-align: center;
+  position: relative;
+}
+
+.bg-text {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 7.5rem;
+  line-height: 1.1;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.brands {
+  margin: 10% auto;
+  text-align: center;
+}
+
+.brands h2 {
+  margin: 0 auto 4% auto;
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  max-width: 50%;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 800px;
+  margin-right: 30px;
+  background: lightgrey;
+  counter-increment: gallery-cell;
+}
+
+.gallery-cell h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.client1 {
+  background-image: url("../img/grafikr_client_twttw.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.client2 {
+  background-image: url("../img/grafikr_client_soyaconcept.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.client3 {
+  background-image: url("../img/grafikr_client_last.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -13,173 +251,13 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  text-transform: uppercase;
-  font-size: 10.5rem;
-  font-weight: 800;
-  text-align: center;
-  line-height: 1.2;
-  letter-spacing: 0.5rem;
-  z-index: 10;
-  position: relative;
-  margin-top: 6%;
-}
-
 .wrap-90 {
   margin: 0 auto;
   width: 90vw;
 }
 
-.wrap-90 .logo {
-  width: 4%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.wrap-90 .circle-image {
-  width: 22%;
-  position: absolute;
-  -webkit-animation: spin 45s linear infinite;
-          animation: spin 45s linear infinite;
-}
-
-.wrap-90 .hero-img {
-  max-width: 90vw;
-  position: relative;
-  z-index: 1;
-  margin-top: -12%;
-}
-
-.wrap-90 .information {
-  margin: 8% auto;
-  width: 85%;
-}
-
-.wrap-90 .information .information-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.wrap-90 .information .information-reverse-row {
-  margin-top: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-
-.wrap-90 .information .information-right-text-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 1% 4%;
-  font-size: 2rem;
-  width: 60%;
-}
-
-.wrap-90 .information .information-left-text-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 1% 4% 0 0;
-  font-size: 2rem;
-  width: 45%;
-}
-
-.wrap-90 .information #image-workaway {
-  background-image: url("../img/grafikr_workaway.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 70%;
-  height: 50rem;
-}
-
-.wrap-90 .information #image-speaker {
-  background-image: url("../img/grafikr_speaker.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 90%;
-  height: 45rem;
-}
-
-.wrap-90 .team {
-  margin: 6% auto;
-  text-align: center;
-}
-
-.wrap-90 .team h3 {
-  margin: 0 auto 4% auto;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  max-width: 60%;
-}
-
 .fullwidth {
   min-width: 100vw;
-}
-
-.fullwidth #color-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  opacity: 0.9;
-}
-
-.fullwidth .bg-image {
-  background-image: url("../img/simone.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 50rem;
-  z-index: 0;
-  text-align: center;
-  position: relative;
-}
-
-.fullwidth .bg-text {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 7.5rem;
-  line-height: 1.1;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.fullwidth .brands {
-  margin: 10% auto;
-  text-align: center;
-}
-
-.fullwidth .brands h2 {
-  margin: 0 auto 4% auto;
-  font-size: 5rem;
-  text-transform: uppercase;
-  font-weight: 800;
-  max-width: 50%;
 }
 
 @media screen and (max-width: 1350px) {
