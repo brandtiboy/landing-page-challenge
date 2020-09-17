@@ -19,11 +19,13 @@
   counter-increment: gallery-cell;
 
   h3 {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 1.4rem;
-    text-transform: capitalize;
+    text-transform: uppercase;
     color: $secondary-color;
   }
 }
@@ -47,4 +49,39 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (max-width: 1350px) {
+  h2 {
+    font-size: 7rem;
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  h2 {
+    font-size: 6rem;
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  h2 {
+    font-size: 5rem;
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  h2 {
+    font-size: 4rem;
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  h2 {
+    font-size: 3rem;
+    padding: 0 5%;
+  }
 }

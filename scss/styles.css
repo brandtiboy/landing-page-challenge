@@ -32,18 +32,6 @@
   display: none;
 }
 
-.heading {
-  text-transform: uppercase;
-  font-size: 10.5rem;
-  font-weight: 800;
-  text-align: center;
-  line-height: 1.2;
-  letter-spacing: 0.5rem;
-  z-index: 10;
-  position: relative;
-  margin-top: 6%;
-}
-
 .logo {
   width: 4%;
   display: block;
@@ -140,10 +128,17 @@
 
 .team h3 {
   margin: 0 auto 4% auto;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   text-transform: uppercase;
   font-weight: 700;
   max-width: 60%;
+}
+
+.team li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 2%;
+  font-size: 3.2rem;
 }
 
 #color-overlay {
@@ -201,17 +196,14 @@
 }
 
 .gallery-cell h3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-size: 1.4rem;
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: #fff;
 }
 
@@ -236,9 +228,45 @@
   background-size: cover;
 }
 
+@media screen and (max-width: 1350px) {
+  h2 {
+    font-size: 7rem;
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  h2 {
+    font-size: 6rem;
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  h2 {
+    font-size: 5rem;
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  h2 {
+    font-size: 4rem;
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  h2 {
+    font-size: 3rem;
+    padding: 0 5%;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  max-width: 100vw;
 }
 
 body {
@@ -251,25 +279,63 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  text-transform: uppercase;
+  font-size: 10rem;
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: 0.5rem;
+  z-index: 10;
+  position: relative;
+  margin-top: 6%;
+}
+
 .wrap-90 {
   margin: 0 auto;
-  width: 90vw;
+  max-width: 90%;
 }
 
 .fullwidth {
-  min-width: 100vw;
+  max-width: 100vw;
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1640px) {
   h1 {
-    font-size: 5.6rem;
+    font-size: 7.8rem;
     letter-spacing: 0.2rem;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1380px) {
   h1 {
-    font-size: 2.6rem;
+    font-size: 6rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  h1 {
+    font-size: 5rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  h1 {
+    font-size: 3rem;
   }
 }
 

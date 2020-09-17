@@ -7,6 +7,7 @@
 
 * {
   box-sizing: border-box;
+  max-width: 100vw;
 }
 
 body {
@@ -19,27 +20,65 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  text-transform: uppercase;
+  font-size: 10rem;
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: 0.5rem;
+  z-index: 10;
+  position: relative;
+  margin-top: 6%;
+}
+
 .wrap-90 {
   margin: 0 auto;
-  width: 90vw;
+  max-width: 90%;
   //background-color: green;
 }
 
 .fullwidth {
-  min-width: 100vw;
+  max-width: 100vw;
   //background: blue;
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1640px) {
   h1 {
-    font-size: 5.6rem;
+    font-size: 7.8rem;
     letter-spacing: 0.2rem;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1380px) {
   h1 {
-    font-size: 2.6rem;
+    font-size: 6rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  h1 {
+    font-size: 5rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  h1 {
+    font-size: 3rem;
   }
 }
 
