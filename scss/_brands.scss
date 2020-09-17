@@ -56,12 +56,28 @@
     font-size: 7rem;
     padding: 0 5%;
   }
+
+  .brands {
+    h2 {
+      font-size: 4rem;
+      text-transform: uppercase;
+      font-weight: 800;
+      max-width: 67%;
+    }
+  }
 }
 
 @media screen and (max-width: 920px) {
   h2 {
     font-size: 6rem;
     padding: 0 5%;
+  }
+
+  .brands {
+    h2 {
+      font-size: 3rem;
+      max-width: 72%;
+    }
   }
 }
 
@@ -77,11 +93,25 @@
     font-size: 4rem;
     padding: 0 5%;
   }
+
+  .brands {
+    h2 {
+      font-size: 2rem;
+      max-width: 72%;
+    }
+  }
 }
 
 @media screen and (max-width: 540px) {
   h2 {
     font-size: 3rem;
     padding: 0 5%;
+  }
+
+  .brands {
+    h2 {
+      font-size: 1.6rem;
+      max-width: 72%;
+    }
   }
 }

@@ -2,8 +2,8 @@
 @import "hero";
 @import "information";
 @import "team";
-@import "fullwidth";
 @import "brands";
+@import "fullwidth";
 
 * {
   box-sizing: border-box;
@@ -43,6 +43,10 @@ h1 {
   //background: blue;
 }
 
+/***************************************
+*********** MEDIA QUERIES **************
+***************************************/
+
 @media screen and (max-width: 1640px) {
   h1 {
     font-size: 7.8rem;
@@ -55,6 +59,12 @@ h1 {
     font-size: 6rem;
     letter-spacing: 0.2rem;
   }
+
+  .team {
+    li {
+      font-size: 2.6rem;
+    }
+  }
 }
 
 @media screen and (max-width: 1080px) {
@@ -62,25 +72,79 @@ h1 {
     font-size: 5rem;
     letter-spacing: 0.2rem;
   }
+
+  .team {
+    li {
+      font-size: 2.1rem;
+    }
+  }
 }
 
 @media screen and (max-width: 900px) {
   h1 {
     font-size: 4rem;
   }
-}
 
-@media screen and (max-width: 680px) {
-  h1 {
-    font-size: 3rem;
+  .team {
+    h3 {
+      font-size: 2rem;
+      max-width: 90%;
+      margin-top: 15%;
+      margin-bottom: 8%;
+    }
+
+    li {
+      font-size: 1.55rem;
+
+      &:hover {
+        span {
+          top: -220px;
+          left: -120px;
+
+          img {
+            height: 12rem;
+          }
+        }
+      }
+    }
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 682px) {
   h1 {
     font-size: 3rem;
   }
+
+  .team {
+    h3 {
+      font-size: 2rem;
+      max-width: 90%;
+      margin-top: 25%;
+      margin-bottom: 12%;
+    }
+
+    li {
+      font-size: 1.55rem;
+      display: block;
+      padding: 10px;
+
+      &:hover {
+        span {
+          top: -200px;
+          left: 0px;
+
+          img {
+            height: 12rem;
+          }
+        }
+      }
+    }
+  }
 }
+
+/***************************************
+*********** KEYFRAMES **************
+***************************************/
 
 @keyframes spin {
   100% {

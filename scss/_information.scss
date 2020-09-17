@@ -2,6 +2,15 @@
   margin: 8% auto;
   width: 85%;
 
+  figure {
+    width: 70%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+  }
+
   .information-row {
     display: flex;
     flex-direction: row;
@@ -33,15 +42,31 @@
     background-image: url("../img/grafikr_workaway.jpg");
     background-size: cover;
     background-position: center;
-    width: 70%;
     height: 50rem;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
   }
 
   #image-speaker {
     background-image: url("../img/grafikr_speaker.jpg");
     background-size: cover;
     background-position: center;
-    width: 90%;
     height: 45rem;
+
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
   }
 }
