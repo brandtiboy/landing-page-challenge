@@ -402,6 +402,13 @@ h1 {
   .team li {
     font-size: 2.6rem;
   }
+  .information h3 {
+    font-size: 2rem;
+  }
+  .information #image-workaway,
+  .information #image-speaker {
+    height: 30rem;
+  }
 }
 
 @media screen and (max-width: 1080px) {
@@ -434,6 +441,13 @@ h1 {
   .team li:hover span img {
     height: 12rem;
   }
+  .information h3 {
+    font-size: 1.6rem;
+  }
+  .information #image-workaway,
+  .information #image-speaker {
+    height: 20rem;
+  }
 }
 
 @media screen and (max-width: 682px) {
@@ -456,6 +470,13 @@ h1 {
     left: 0px;
   }
   .team li:hover span img {
+    height: 12rem;
+  }
+  .information h3 {
+    font-size: 1rem;
+  }
+  .information #image-workaway,
+  .information #image-speaker {
     height: 12rem;
   }
 }
